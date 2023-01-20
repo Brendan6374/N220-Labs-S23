@@ -22,8 +22,12 @@ function setup() {
 
 }
 
+//not to sure everything is suppose to go in there
+
 r = 50
 
 x = 550
 
+
+// I could not get the variable manipulation to work right so it was scraped
 
