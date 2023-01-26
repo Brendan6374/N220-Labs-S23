@@ -3,7 +3,7 @@ function setup() {
     x = mouseX
     y = mouseY
 }
-
+//connect the circle to the mouse 
 function draw(){
       
     
@@ -14,3 +14,4 @@ function draw(){
 }
 
 }
+// connect the mouse to the if statment so that it changes every time it crosses 

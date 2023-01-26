@@ -1,3 +1,4 @@
+// create the canuvs a define x
 function setup(){
     createCanvas(800, 600)
     frameRate(60)
@@ -7,7 +8,7 @@ function setup(){
 function draw(){
     console.log(frameCount)
 }
-
+// the circle constrution and color change 
 function draw(){
     background(78, 80, 82)
     fill(45, 224, 25)
@@ -19,4 +20,4 @@ function draw(){
         x = 200 
     }
 }
-
+//having a if statment resets the circle at the end of the cycle 
