@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Rock Paper Scissor Guard</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+
+      .box {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+      }
+      .title {
+        text-align: center;
+        padding: 2%;
+        font-size: 40px;
+      }
+
+      .score {
+        display: flex;
+        width: 30vw;
+        justify-content: space-around;
+        margin: 5% 0;
+      }
+
+      .p-count,
+      .c-count {
+        width: 100px;
+        margin-top: 10px;
+        border-radius: 5px;
+        text-align: center;
+        padding: 15px;
+      }
+
+      .options {
+        display: flex;
+        width: 50vw;
+        justify-content: space-around;
+        margin-top: 2rem;
+      }
+
+      .btns {
+        padding: 0.8rem;
+        width: 100px;
+        border-radius: 10px;
+        background-color: (rgba(0, 132, 255, 0.808));
+        outline: none;
+        display: grid;
+        place-items: center;
+        color: black;
+        font-weight: bold;
+        border: none;
+        cursor: pointer;
+      }
+      .btns:hover {
+        background-color: (rgba(0, 23, 255));
+      }
+      .move {
+        font-size: 2rem;
+        font-weight: bold;
+      }
+      .result {
+        margin-top: 20px;
+        font-size: 1.2rem;
+      }
+      .playerScore,
+      .computerScore {
+        display: grid;
+        place-items: center;
+      }
+      #reload {
+        margin-top: 20px;
+        display: none;
+      }
+
+      @media screen and (max-width: 612px) {
+        .title {
+          text-align: center;
+        }
+        .score {
+          width: 100vw;
+        }
+        .options {
+          width: 90vw;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="title">Rock Paper Scissor Guard</h1>
+    <section class="box">
+      <div class="score">
+        <div class="playerScore">
+          <h2>Player</h2>
+          <p class="p-count count">0</p>
+        </div>
+        <div class="computerScore">
+          <h2>Computer</h2>
+          <p class="c-count count">0</p>
+        </div>
+      </div>
+
+      <b class="move">Choose your move</b>
+      <span id="movesleft">Moves Left: 10 </span>
+
+      <div class="options">
+        <div class="btns rock">Rock</div>
+        <div class="btns paper">Paper</div>
+        <div class="btns scissor">Scissors</div>
+        <div class="btns guard">Guard</div>
+      </div>
+
+      <div class="result"></div>
+
+      <button class="btns" id="reload"></button>
+    </section>
+
+    <script src="appSevenTwo.js"></script>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .card {
+        height: 200px;
+        width: 200px;
+        border: 1px solid black;
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+      }
+
+      .main-div {
+        display: flex;
+
+        flex-wrap: wrap;
+      }
+
+      .click {
+        background-color: greenyellow;
+
+        font-weight: bold;
+      }
+
+      #clickedItem {
+        font-size: 25px;
+
+        font-weight: bold;
+
+        display: flex;
+
+        justify-content: center;
+
+        width: 100vw;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="clickedItem"></div>
+
+    <div class="main-div">
+      <div class="card" id="1" onclick="addRemove(1)">Mango</div>
+
+      <div class="card" id="2" onclick="addRemove(2)">Hockey</div>
+
+      <div class="card" id="3" onclick="addRemove(3)">Soccer</div>
+
+      <div class="card" id="4" onclick="addRemove(4)">Football</div>
+
+      <div class="card" id="5" onclick="addRemove(5)">Racing</div>
+
+      <div class="card" id="6" onclick="addRemove(6)">Tennis</div>
+
+      <script src="appSevenOne.js"></script>
+    </div>
+  </body>
+</html>
